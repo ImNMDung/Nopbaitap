@@ -12,7 +12,7 @@ public class Chuvi {
 	        System.out.println("Nhap Ban Kinh Hinh Tron: ");
 	        r = scanner.nextDouble();
 	   
-	        System.out.println("Chu Vi Hinh Trong: "+ tinhchuvi(r));
+	        System.out.println("Chu Vi Hinh Tron La : "+ tinhchuvi(r));
 	   
 	      
 	    }
