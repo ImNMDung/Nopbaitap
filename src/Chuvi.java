@@ -14,7 +14,7 @@ public class Chuvi {
 	   
 	        System.out.println("Chu Vi Hinh Trong: "+ tinhchuvi(r));
 	   
-	        System.out.println(Math.pow(2.5, -2));
+	      
 	    }
 	}
 
