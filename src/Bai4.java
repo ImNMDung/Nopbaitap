@@ -13,7 +13,7 @@ public class Bai4 {
 		
 		if (status == 0) {
 
-			System.out.println("Compute tax for single filers    ");// Compute tax for single filers
+			System.out.println("Compute tax for single filers    ");
 
 			}
 
