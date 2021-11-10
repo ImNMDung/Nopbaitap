@@ -29,7 +29,9 @@ public class Person implements  Serializable, Cloneable, Comparable<Student>{
 
 	@Override
 	public String toString() {
-		return "Name: " + name + ", gender: " + gender + ", birthYear: " + birthYear;
+		return "Name: " + name 
+				+ ", gender: " + gender
+				+ ", birthYear: " + birthYear;
 	}
 
 	String name;

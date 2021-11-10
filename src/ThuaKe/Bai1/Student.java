@@ -22,7 +22,9 @@ public class Student extends Person {
 	
 	public Student(String name, char gender, int birthYear, String studentID, int academicYear) {
 		super(name, gender, birthYear);
+		
 		this.academicYear = academicYear;
+		
 		this.studentID = studentID;
 		
 		
@@ -45,21 +47,21 @@ public class Student extends Person {
 	int academicYear;
 	
 	public void setInfo() {
-		Scanner input = new Scanner(System.in);
-		System.out.print("Nhap ho ten: ");
-		this.setName(input.next());
+		Scanner sc = new Scanner(System.in);
+		System.out.print("ho ten: ");
+		this.setName(sc.next());
 
-		System.out.print("Nhap ma sinh vien: ");
-		this.setStudentID(input.next());
+		System.out.print(" ma sinh vien: ");
+		this.setStudentID(sc.next());
 		
-		System.out.print("Nhap nam sinh: ");
-		this.setBirthYear(input.nextInt());
+		System.out.print("nam sinh: ");
+		this.setBirthYear(sc.nextInt());
 		
-		System.out.print("Nhap gioi tinh: ");
-		this.setGender(input.next().charAt(0));
+		System.out.print(" gioi tinh: ");
+		this.setGender(sc.next().charAt(0));
 		
-		System.out.print("Nhap nam nhap hoc: ");
-		this.setAcademicYear(input.nextInt());
+		System.out.print("nam nhap hoc: ");
+		this.setAcademicYear(sc.nextInt());
 		
 		
 	}

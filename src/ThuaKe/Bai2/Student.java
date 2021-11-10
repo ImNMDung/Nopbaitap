@@ -26,9 +26,13 @@ public class Student extends Person{
 	
 	@Override
 	public String toString() {
-		return "Student:\n studentID: " + studentID + ", academicYear: " + academicYear + ", gpa: " + gpa
-				+ ", soicialActivities: " + soicialActivities + ", name: " + name + ", gender: " + gender + ", birthYear: "
-				+ birthYear;
+		return "Student:\n studentID: " + studentID + 
+				",\n AcademicYear: " + academicYear
+				+ ",\n GPA: " + gpa
+				+ ", \\nsoicialActivities: " + soicialActivities + 
+				",\n name: " + name 
+				+ ",\n gender: " + gender
+				+ ", \nbirthYear: "	+ birthYear;
 	}
 	public String getStudentID() {
 		return studentID;
@@ -61,13 +65,13 @@ public class Student extends Person{
 	
 	
 	public Student(String name, char gender, int birthYear, String studentID, int academicYear, float gpa,
-			float soicialActivities) {
+		float soicialActivities) {
 		super(name, gender, birthYear);
 		this.studentID = studentID;
 		this.academicYear = academicYear;
 		this.gpa = gpa;
 		this.soicialActivities = soicialActivities;
-	}
+		}
 	
 	
 	
@@ -75,26 +79,26 @@ public class Student extends Person{
 		super();
 	}
 	public void setInfo() {
-		Scanner input = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.print("Nhap ho ten: ");
-		this.setName(input.next());
+		this.setName(sc.next());
 
 		System.out.print("Nhap ma sinh vien: ");
-		this.setStudentID(input.next());
+		this.setStudentID(sc.next());
 		
 		System.out.print("Nhap nam sinh: ");
-		this.setBirthYear(input.nextInt());
+		this.setBirthYear(sc.nextInt());
 		
 		System.out.print("Nhap gioi tinh: ");
-		this.setGender(input.next().charAt(0));
+		this.setGender(sc.next().charAt(0));
 		
 		System.out.print("Nhap nam nhap hoc: ");
-		this.setAcademicYear(input.nextInt());
+		this.setAcademicYear(sc.nextInt());
 		
-		System.out.print("Nhap gpa: ");
-		this.setGpa(input.nextFloat());
+		System.out.print("Nhap GPA: ");
+		this.setGpa(sc.nextFloat());
 		
-		System.out.print("Nhap soicialActivities: ");
-		this.setSoicialActivities(input.nextFloat());
+		System.out.print("Nhap SoicialActivities: ");
+		this.setSoicialActivities(sc.nextFloat());
 	}
 }

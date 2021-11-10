@@ -27,7 +27,9 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "Name: " + name + ",\n Gender: " + gender + ",\n BirthYear: " + birthYear;
+		return "Name: " + name 
+				+ ",\n Gender: " + gender 
+				+ ",\n BirthYear: " + birthYear;
 	}
 
 	String name;
