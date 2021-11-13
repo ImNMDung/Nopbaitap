@@ -1,6 +1,23 @@
 package ThuaKe.Bai1;
 
 public class Person {
+	
+	String name;
+	char gender;
+	int birthYear;
+	
+	public Person() {
+		super();
+	}
+
+	public Person(String name, char gender, int birthYear) {
+		super();
+		this.name = name;
+		this.gender = gender;
+		this.birthYear = birthYear;
+	}
+	
+	
 	public String getName() {
 		return name;
 	}
@@ -32,20 +49,7 @@ public class Person {
 				+ ",\n BirthYear: " + birthYear;
 	}
 
-	String name;
-	char gender;
-	int birthYear;
 	
-	public Person() {
-		super();
-	}
-
-	public Person(String name, char gender, int birthYear) {
-		super();
-		this.name = name;
-		this.gender = gender;
-		this.birthYear = birthYear;
-	}
 	
 	
 }

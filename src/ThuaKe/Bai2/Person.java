@@ -3,6 +3,23 @@ package ThuaKe.Bai2;
 import java.io.Serializable;
 
 public class Person implements  Serializable, Cloneable, Comparable<Student>{
+
+	String name;
+	char gender;
+	int birthYear;
+	
+	public Person() {
+		super();
+	}
+
+	public Person(String name, char gender, int birthYear) {
+		super();
+		this.name = name;
+		this.gender = gender;
+		this.birthYear = birthYear;
+	}
+	
+	
 	public String getName() {
 		return name;
 	}
@@ -34,20 +51,6 @@ public class Person implements  Serializable, Cloneable, Comparable<Student>{
 				+ ", birthYear: " + birthYear;
 	}
 
-	String name;
-	char gender;
-	int birthYear;
-	
-	public Person() {
-		super();
-	}
-
-	public Person(String name, char gender, int birthYear) {
-		super();
-		this.name = name;
-		this.gender = gender;
-		this.birthYear = birthYear;
-	}
 
 	@Override
 	public int compareTo(Student o) {

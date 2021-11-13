@@ -3,61 +3,7 @@ package ThuaKe.Bai2;
 import java.util.Scanner;
 
 public class Student extends Person{
-	@Override
-	public int compareTo(Student o) {
-		// TODO Auto-generated method stub
-		if(this.getGpa() > o.getGpa()) {
-			return 1;
-		}
-		else if(this.getGpa() == o.getGpa()) {
-			if(this.getSoicialActivities() > o.getSoicialActivities()) {
-				return 1;
-			}
-			else if(this.getSoicialActivities() == o.getSoicialActivities()) {
-				return 0;
-			}
-			else {
-				return -1;
-			}
-		}
-		
-		return -1;
-	}
 	
-	@Override
-	public String toString() {
-		return "Student:\n studentID: " + studentID + 
-				",\n AcademicYear: " + academicYear
-				+ ",\n GPA: " + gpa
-				+ ", \\nsoicialActivities: " + soicialActivities + 
-				",\n name: " + name 
-				+ ",\n gender: " + gender
-				+ ", \nbirthYear: "	+ birthYear;
-	}
-	public String getStudentID() {
-		return studentID;
-	}
-	public void setStudentID(String studentID) {
-		this.studentID = studentID;
-	}
-	public int getAcademicYear() {
-		return academicYear;
-	}
-	public void setAcademicYear(int academicYear) {
-		this.academicYear = academicYear;
-	}
-	public float getGpa() {
-		return gpa;
-	}
-	public void setGpa(float gpa) {
-		this.gpa = gpa;
-	}
-	public float getSoicialActivities() {
-		return soicialActivities;
-	}
-	public void setSoicialActivities(float soicialActivities) {
-		this.soicialActivities = soicialActivities;
-	}
 	String studentID;
 	int academicYear;
 	float gpa;
@@ -100,5 +46,60 @@ public class Student extends Person{
 		
 		System.out.print("Nhap SoicialActivities: ");
 		this.setSoicialActivities(sc.nextFloat());
+	}
+	@Override
+	public String toString() {
+		return "Student:\n studentID: " + studentID + 
+				",\n AcademicYear: " + academicYear
+				+ ",\n GPA: " + gpa
+				+ ", \nsoicialActivities: " + soicialActivities + 
+				",\n name: " + name 
+				+ ",\n gender: " + gender
+				+ ", \nbirthYear: "	+ birthYear;
+	}
+	public String getStudentID() {
+		return studentID;
+	}
+	public void setStudentID(String studentID) {
+		this.studentID = studentID;
+	}
+	public int getAcademicYear() {
+		return academicYear;
+	}
+	public void setAcademicYear(int academicYear) {
+		this.academicYear = academicYear;
+	}
+	public float getGpa() {
+		return gpa;
+	}
+	public void setGpa(float gpa) {
+		this.gpa = gpa;
+	}
+	public float getSoicialActivities() {
+		return soicialActivities;
+	}
+	public void setSoicialActivities(float soicialActivities) {
+		this.soicialActivities = soicialActivities;
+	}
+	
+	@Override
+	public int compareTo(Student o) {
+		// TODO Auto-generated method stub
+		if(this.getGpa() > o.getGpa()) {
+			return 1;
+		}
+		else if(this.getGpa() == o.getGpa()) {
+			if(this.getSoicialActivities() > o.getSoicialActivities()) {
+				return 1;
+			}
+			else if(this.getSoicialActivities() == o.getSoicialActivities()) {
+				return 0;
+			}
+			else {
+				return -1;
+			}
+		}
+		
+		return -1;
 	}
 }
